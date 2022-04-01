@@ -1,0 +1,64 @@
+.button1 {
+    padding-bottom: 20px;
+    text-align: center;
+   
+}
+.blue{
+    background-color: rgb(46, 99, 232);
+    color:white;
+    padding: 14px;
+    margin-top: -12px;
+    border: transparent;
+    border-radius:  3px; 
+}
+.search {    
+    background:url(./search-svgrepo-com.svg) no-repeat 10px;
+    padding-left:25px;   
+    border-radius: 25px;
+    border: .5px solid gray;
+    width: 50%;
+    line-height: 200%;
+
+}
+
+.center{
+   
+    text-align: center;
+}
+
+.button {
+    background: #eff2f5; 
+    margin-right: 25px;
+    padding: 7px; 
+    border-radius: 3px ; 
+    border-color: transparent;
+    font-weight:lighter;
+
+}
+
+.logo{display: flexbox;
+align-items: center;
+justify-content: center;
+padding-top: 10%;
+margin: 0;
+
+}
+.logo > img{
+    
+    height: 40vh;
+    width: 40vw;
+    margin-left: 30vw;
+  
+
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+li {
+    float: right;
+    padding: 16px;
+  }
+nav{display: block;}
