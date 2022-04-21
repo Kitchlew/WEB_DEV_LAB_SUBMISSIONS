@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form1">
+        <label>a</label>
+        <input type="text" id="a" ><br>
+        <label>b</label>
+        <input type="text" id="b" ><br>
+    </form>
+    <button class="btn btn-success" type="submit" id="form1" onclick="calc()" >
+    Submit
+    </button>
+    <h3 id="sum" value="0">Sum:</h3>
+    <h3 id="sub">Subtraction;</h3>
+    <h3 id="mult">Multiplication:</h3>
+    <h3 id="div">Division:</h3>
+    <script>
+
+        function calc(){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+
+            var sumE = document.getElementById("sum");
+            var subE = document.getElementById("sub");
+            var multE = document.getElementById("mult");
+            var divideE = document.getElementById("div");
+            var sum = parseInt(a) + parseInt(b)
+            sumE.innerHTML = `Sum: ${sum}`;
+            subE.innerHTML = `Sub: ${a - b}`;   
+            multE.innerHTML = `Mult: ${a*b}`;
+            divideE.innerHTML = `Divide: ${a/b}`;
+
+            console.log(a);
+        }
+    
+    
+    </script>
+</body>
+</html>

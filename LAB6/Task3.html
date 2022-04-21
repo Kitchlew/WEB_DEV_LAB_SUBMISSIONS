@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+  <form id="form1">
+    <label>a.</label> <input id="a" type="number"><br>
+    <label>b.</label> <input id="b" type="number"><br>
+    <label>c.</label>   <input id="c" type="number"><br>
+    <label>d.</label>  <input id="d" type="number"><br>
+    <label>e.</label>  <input id="e" type="number"><br>
+  <button type="submit" id="form1" onclick="submit1()">Submit</button><br>
+  <div>Min</div>
+
+  <script type="text/javascript">
+    function submit1() {
+      var a = document.getElementById("a").value;
+      var b = document.getElementById("b").value;
+      var c = document.getElementById("c").value; 
+      var d = document.getElementById("d").value; 
+      var e = document.getElementById("e").value;console.log(e); }
+      
+      function min1(){
+          document.write( Math.min(a,b,c,d,e))
+          console.log(e);
+      }
+      </script>
+</body>
+
+</html>
