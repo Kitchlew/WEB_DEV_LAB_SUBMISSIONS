@@ -5,21 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <form id="form1">
-        <label>a</label>
-        <input type="text" id="a" ><br>
-        <label>b</label>
-        <input type="text" id="b" ><br>
-    </form>
-    <button class="btn btn-success" type="submit" id="form2" onclick="calc()" >
-    Submit
-    </button>
-    <h3 id="sum" value="0">Sum:</h3>
-    <h3 id="sub">Subtraction;</h3>
-    <h3 id="mult">Multiplication:</h3>
-    <h3 id="div">Division:</h3>
     <script>
 
         function calc(){
@@ -31,15 +16,29 @@
             var multE = document.getElementById("mult");
             var divideE = document.getElementById("div");
             var sum = parseInt(a) + parseInt(b)
-            sumE.innerHTML = `Sum: ${sum}`;
+            sumE.innerHTML = `${sum}`;
             subE.innerHTML = `Sub: ${a - b}`;   
             multE.innerHTML = `Mult: ${a*b}`;
             divideE.innerHTML = `Divide: ${a/b}`;
 
-            console.log(a);
+           
         }
     
     
     </script>
+</head>
+<body>
+    <form >
+        <label>a</label><input type="number" id="a" ><br>
+        <label>b</label><input type="number" id="b" ><br>
+    </form>
+    <button class="btn btn-success" type="submit" id="form2" onclick="calc()" >
+    Submit
+    </button>
+    <h3 id="sum" value="0">Sum:</h3>
+    <h3 id="sub">Subtraction:</h3>
+    <h3 id="mult">Multiplication:</h3>
+    <h3 id="div">Division:</h3>
+    
 </body>
 </html>

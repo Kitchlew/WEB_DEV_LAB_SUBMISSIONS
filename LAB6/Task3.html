@@ -5,32 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
 </head>
 
 <body>
-  <form id="form1">
-    <label>a.</label> <input id="a" type="number"><br>
-    <label>b.</label> <input id="b" type="number"><br>
-    <label>c.</label>   <input id="c" type="number"><br>
-    <label>d.</label>  <input id="d" type="number"><br>
-    <label>e.</label>  <input id="e" type="number"><br>
-  <button type="submit" id="form1" onclick="submit1()">Submit</button><br>
-  <div>Min</div>
+    <form id="form1">
+        <label>a.</label>  
+        <input id="a" type="number"><br>
+        <label>b.</label>
+        <input id="b" type="number"><br>
+        <label>c.</label>
+        <input id="c" type="number"><br>
+        <label>d.</label>
+        <input id="d" type="number"><br>
+        <label>e.</label>
+    <input id="e" type="number"><br>
+    </form>
+    <button type="submit" onclick="submit()" id="form1">
+        Submit
+    </button>
+    <br>
+    <h3 id="min" >Min:</h3>
+    <h3 id="max">Max:</h3>
+    <h3 id="rand">Random:</h3>
+    <script>
+        function submit() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            var c = document.getElementById("c").value; 
+            var d = document.getElementById("d").value; 
+            var e = document.getElementById("e").value;
+            console.log(e); 
+    
+            var minE = document.getElementById("min");
+            var maxE = document.getElementById("max");
+            var randomE = document.getElementById("rand")
+            minE.innerHTML = `Min: ${Math.min(a,b,c,d,e)}`
+            maxE.innerHTML= `Max: ${Math.max(a,b,c,d,e)}`
 
-  <script type="text/javascript">
-    function submit1() {
-      var a = document.getElementById("a").value;
-      var b = document.getElementById("b").value;
-      var c = document.getElementById("c").value; 
-      var d = document.getElementById("d").value; 
-      var e = document.getElementById("e").value;console.log(e); }
-      
-      function min1(){
-          document.write( Math.min(a,b,c,d,e))
-          console.log(e);
-      }
-      </script>
+            const list = [a,b,c,d,e];
+            console.log(Math.floor(Math.random()*5));
+            randomE.innerHTML = `Random: ${list[Math.floor(Math.random()*5)]}`
+        }
+    </script>
 </body>
-
 </html>
