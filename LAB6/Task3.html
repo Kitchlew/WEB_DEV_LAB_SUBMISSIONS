@@ -27,25 +27,26 @@
     <h3 id="min" >Min:</h3>
     <h3 id="max">Max:</h3>
     <h3 id="rand">Random:</h3>
-    <script>
+   
+</body>
+</html>
+ <script>
         function submit() {
             var a = document.getElementById("a").value;
             var b = document.getElementById("b").value;
             var c = document.getElementById("c").value; 
             var d = document.getElementById("d").value; 
             var e = document.getElementById("e").value;
-            console.log(e); 
+            
     
-            var minE = document.getElementById("min");
-            var maxE = document.getElementById("max");
+            var min = document.getElementById("min");
+            var max = document.getElementById("max");
             var randomE = document.getElementById("rand")
-            minE.innerHTML = `Min: ${Math.min(a,b,c,d,e)}`
-            maxE.innerHTML= `Max: ${Math.max(a,b,c,d,e)}`
+            min.innerHTML = `Min: ${Math.min(a,b,c,d,e)}`
+            max.innerHTML= `Max: ${Math.max(a,b,c,d,e)}`
 
             const list = [a,b,c,d,e];
-            console.log(Math.floor(Math.random()*5));
+
             randomE.innerHTML = `Random: ${list[Math.floor(Math.random()*5)]}`
         }
     </script>
-</body>
-</html>
